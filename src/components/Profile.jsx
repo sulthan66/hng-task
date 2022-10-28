@@ -14,9 +14,9 @@ function Profile() {
   return (
     <Fragment>
       <header className="profile-header">
-        <img src="/assets/pic.jpeg" alt="Wasiu's Profile" id="profile__img" />
+        <img src="/assets/pic.jpeg" alt="Sultan's Profile" id="profile__img" />
         <h1 id="twitter" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-          DevWaslead
+          Sultan
         </h1>
         <span id="slack">{username ? "LordSultan" : null}</span>
 
