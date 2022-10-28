@@ -1,0 +1,64 @@
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#profile__img:hover {
+  background: linear-gradient(rgba(#344054), rgba(#344054)),
+    url("/public/assets/camera.png");
+  cursor: pointer;
+  opacity: 0.75;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#twitter {
+  padding: 20px 0;
+}
+
+.icon-div {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  border: 2px solid #d0d5dd;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.share {
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#desktop-share {
+  display: none;
+}
+
+#slack {
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  #mobile-share {
+    display: none;
+  }
+
+  #desktop-share {
+    display: block;
+  }
+
+  .icon-div {
+    right: 10%;
+  }
+}
